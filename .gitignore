@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code: junction mirroring .agents/skills so CC can discover them
+# (the committed source of truth is .agents/skills/ + skills-lock.json)
+/.claude/skills
