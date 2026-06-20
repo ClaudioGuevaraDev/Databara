@@ -1,6 +1,6 @@
 # Databara — Landing Page
 
-Marketing landing page for [**Databara**](https://github.com/ClaudioGuevaraDev/Databara),
+Marketing landing page for [**Databara**](https://github.com/ClaudioGuevaraDev/databara-app),
 a modern, lightweight desktop database client for PostgreSQL (built with Tauri, React and Rust).
 
 Built with **Next.js (App Router)**, **TypeScript** and **Tailwind CSS v4**.

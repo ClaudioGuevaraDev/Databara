@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The marketing **landing page for Databara** — a separate desktop app (a PostgreSQL
 client built with Tauri/React/Rust, lives at `../Databara` and on GitHub at
-`ClaudioGuevaraDev/Databara`). This repo is **only** the website: a single static
+`ClaudioGuevaraDev/databara-app`). This repo is **only** the website: a single static
 page that explains the app, lists features, offers download links, and drives people
 to the GitHub repo. There is no backend and no app logic here.
 
