@@ -2,7 +2,7 @@ export const GITHUB_REPO = "https://github.com/ClaudioGuevaraDev/databara-app";
 export const GITHUB_ISSUES = `${GITHUB_REPO}/issues`;
 export const GITHUB_RELEASES = `${GITHUB_REPO}/releases`;
 
-export const VERSION = "v1.0.4";
+export const VERSION = process.env.NEXT_PUBLIC_VERSION;
 
 const RELEASE_BASE = `${GITHUB_REPO}/releases/download/${VERSION}`;
 
