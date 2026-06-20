@@ -59,7 +59,7 @@ export const FEATURES = [
     icon: "shield",
   },
   {
-    title: "Beautifully dark",
+    title: "Refined dark theme",
     description:
       "A polished deep-navy theme with a cyan accent, designed to be easy on the eyes.",
     icon: "moon",

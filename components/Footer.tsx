@@ -17,9 +17,7 @@ export default function Footer() {
           <span className="font-semibold">Databara</span>
         </div>
 
-        <p className="text-sm text-muted">
-          MIT Licensed · © 2026 Claudio Guevara
-        </p>
+        <p className="text-sm text-muted">© 2026 Claudio Guevara</p>
 
         <a
           href={GITHUB_REPO}

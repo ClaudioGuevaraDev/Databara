@@ -1,5 +1,5 @@
-import { DOWNLOADS, GITHUB_RELEASES } from "@/app/data";
-import { AppleIcon, DownloadIcon, LinuxIcon, WindowsIcon } from "./icons";
+import { DOWNLOADS } from "@/app/data";
+import { AppleIcon, LinuxIcon, WindowsIcon } from "./icons";
 import type { ComponentType, SVGProps } from "react";
 
 type Platform = {
@@ -26,7 +26,7 @@ export default function Download() {
             Download Databara
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Free and open source. Pick the installer for your operating system.
+            Free and open source. Pick the installer for your platform.
           </p>
         </div>
 
@@ -34,19 +34,20 @@ export default function Download() {
           {PLATFORMS.map(({ name, Icon, formats }) => (
             <div
               key={name}
-              className="flex flex-col items-center rounded-2xl border border-border bg-surface/50 p-8 text-center transition-colors hover:border-accent/40"
+              className="group flex flex-col items-center rounded-2xl border border-border bg-gradient-to-b from-surface/70 to-surface/30 p-8 text-center transition-all duration-200 hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_14px_44px_-18px_rgba(34,211,238,0.5)]"
             >
-              <Icon className="h-10 w-10 text-foreground" />
+              <span className="inline-flex rounded-xl bg-surface-2 p-2.5 ring-1 ring-border transition-colors group-hover:ring-accent/40">
+                <Icon className="h-8 w-8 text-foreground" />
+              </span>
               <h3 className="mt-4 text-lg font-semibold">{name}</h3>
 
-              <div className="mt-5 flex w-full flex-col gap-2.5">
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
                 {formats.map((format) => (
                   <a
                     key={format.url}
                     href={format.url}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-accent/30 bg-accent/10 px-4 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
+                    className="inline-flex items-center rounded-lg border border-accent/30 bg-accent/10 px-3.5 py-2 text-sm font-semibold text-accent transition-colors hover:border-accent/50 hover:bg-accent/20"
                   >
-                    <DownloadIcon className="h-4 w-4" />
                     {format.label}
                   </a>
                 ))}
@@ -54,18 +55,6 @@ export default function Download() {
             </div>
           ))}
         </div>
-
-        <p className="mt-8 text-center text-sm text-muted">
-          Looking for source code or other formats?{" "}
-          <a
-            href={GITHUB_RELEASES}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-accent hover:underline"
-          >
-            See all releases
-          </a>
-        </p>
       </div>
     </section>
   );

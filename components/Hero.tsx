@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { GITHUB_REPO } from "@/app/data";
-import { ArrowRightIcon, DownloadIcon, GitHubIcon } from "./icons";
+import { DownloadIcon } from "./icons";
 import AppMock from "./AppMock";
 
 export default function Hero() {
@@ -17,33 +16,23 @@ export default function Hero() {
             A modern database client,
             <br className="hidden sm:block" />{" "}
             <span className="bg-gradient-to-r from-accent to-accent-strong bg-clip-text text-transparent">
-              beautifully dark.
+              fast and native.
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
             Databara is a fast, lightweight desktop client for PostgreSQL. Native
             performance, a schema-aware SQL editor and a multi-connection
-            workspace — built with Tauri, React and Rust.
+            workspace.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-center gap-3">
             <a
               href="#download"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-[#04121a] shadow-[0_0_30px_-6px_rgba(34,211,238,0.6)] transition-transform hover:scale-[1.02]"
+              className="group inline-flex items-center gap-2.5 rounded-xl bg-gradient-to-r from-accent to-accent-strong px-7 py-3.5 text-base font-semibold text-[#04121a] shadow-[0_0_26px_-12px_rgba(34,211,238,0.5)] transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_0_38px_-10px_rgba(34,211,238,0.65)]"
             >
-              <DownloadIcon className="h-4 w-4" />
+              <DownloadIcon className="h-5 w-5 transition-transform group-hover:-translate-y-0.5" />
               Download for free
-            </a>
-            <a
-              href={GITHUB_REPO}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent/50 hover:bg-surface"
-            >
-              <GitHubIcon className="h-4 w-4" />
-              View on GitHub
-              <ArrowRightIcon className="h-4 w-4" />
             </a>
           </div>
 
@@ -55,7 +44,7 @@ export default function Hero() {
               height={18}
               className="rounded"
             />
-            Free &amp; open source · MIT licensed · Windows, macOS &amp; Linux
+            Free &amp; open source · Windows, macOS &amp; Linux
           </p>
         </div>
 

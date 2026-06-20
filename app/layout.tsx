@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   ),
   title: "Databara — A modern PostgreSQL desktop client",
   description:
-    "Databara is a fast, lightweight and beautifully dark desktop database client for PostgreSQL. Built with Tauri, React and Rust. Free and open source.",
+    "Databara is a fast, lightweight, native desktop database client for PostgreSQL. Built with Tauri, React and Rust. Free and open source.",
   icons: {
     icon: "/databara-logo.png",
   },
   openGraph: {
     title: "Databara — A modern PostgreSQL desktop client",
     description:
-      "Fast, native, and beautifully dark. A lightweight desktop client for PostgreSQL — free and open source.",
+      "Fast, native, and lightweight. A desktop client for PostgreSQL — free and open source.",
     images: ["/databara-logo.png"],
     type: "website",
   },
