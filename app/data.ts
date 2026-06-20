@@ -2,22 +2,22 @@ export const GITHUB_REPO = "https://github.com/ClaudioGuevaraDev/databara-app";
 export const GITHUB_ISSUES = `${GITHUB_REPO}/issues`;
 export const GITHUB_RELEASES = `${GITHUB_REPO}/releases`;
 
-export const VERSION = process.env.NEXT_PUBLIC_VERSION;
+export const VERSION = `v${process.env.NEXT_PUBLIC_VERSION}`;
 
 const RELEASE_BASE = `${GITHUB_REPO}/releases/download/${VERSION}`;
 
 export const DOWNLOADS = {
   windows: [
-    { label: ".exe", url: `${RELEASE_BASE}/Databara_1.0.4_x64-setup.exe` },
-    { label: ".msi", url: `${RELEASE_BASE}/Databara_1.0.4_x64_en-US.msi` },
+    { label: ".exe", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_x64-setup.exe` },
+    { label: ".msi", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_x64_en-US.msi` },
   ],
   macos: [
-    { label: ".dmg", url: `${RELEASE_BASE}/Databara_1.0.4_universal.dmg` },
+    { label: ".dmg", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_universal.dmg` },
   ],
   linux: [
-    { label: ".AppImage", url: `${RELEASE_BASE}/Databara_1.0.4_amd64.AppImage` },
-    { label: ".deb", url: `${RELEASE_BASE}/Databara_1.0.4_amd64.deb` },
-    { label: ".rpm", url: `${RELEASE_BASE}/Databara-1.0.4-1.x86_64.rpm` },
+    { label: ".AppImage", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_amd64.AppImage` },
+    { label: ".deb", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_amd64.deb` },
+    { label: ".rpm", url: `${RELEASE_BASE}/Databara-${process.env.NEXT_PUBLIC_VERSION}-1.x86_64.rpm` },
   ],
 } as const;
 
