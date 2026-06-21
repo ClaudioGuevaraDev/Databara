@@ -9,7 +9,6 @@ const RELEASE_BASE = `${GITHUB_REPO}/releases/download/${VERSION}`;
 export const DOWNLOADS = {
   windows: [
     { label: ".exe", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_x64-setup.exe` },
-    { label: ".msi", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_x64_en-US.msi` },
   ],
   macos: [
     { label: ".dmg", url: `${RELEASE_BASE}/Databara_${process.env.NEXT_PUBLIC_VERSION}_universal.dmg` },
